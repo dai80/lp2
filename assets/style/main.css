@@ -347,7 +347,15 @@ h1 {
 /* voice
 ---------------------------------------------------*/
 .voice {
-  padding: 50px 55px 50px;
+  padding: 3.125rem 3.4375rem 4.6875rem;
+}
+
+@media (min-width: 768px) {
+  .voice {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 5rem 1rem 7.0625rem;
+  }
 }
 
 .voice-container__title {
@@ -362,6 +370,16 @@ h1 {
   color: #000;
   line-height: calc(32 / 30);
   text-align: center;
+  letter-spacing: 0.125rem;
+}
+
+@media (min-width: 768px) {
+  .voice__title {
+    font-size: 2.8125rem;
+    line-height: calc(32 / 45);
+    letter-spacing: 0.125rem;
+    margin-bottom: 0.5rem;
+}
 }
 
 .voice__sub-title {
@@ -370,14 +388,31 @@ h1 {
   color: #000;
   line-height: calc(32 / 16);
   text-align: center;
-  padding-bottom: 36px;
+  padding-bottom: 2.25rem;
+  letter-spacing: 0.125rem;
 }
 
-
+@media (min-width: 768px) {
+  .voice__sub-title {
+    font-size: 1.25rem;
+    line-height: calc(32 / 20);
+    padding-bottom: 2.5rem;
+    letter-spacing: 0.125rem;
+  }
+}
 
 .voice-container--box {
   background-color: #DBF7F9;
   padding: 1.75rem 0.9375rem 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .voice-container--box {
+    padding: 2.5rem 1rem 2.5rem;
+    margin-right: 4.0625rem;
+    margin-left: 4.0625rem;
+    max-width: 18.75rem;
+  }
 }
 
 .voice__img {
@@ -393,8 +428,17 @@ h1 {
   color: #000;
   line-height: calc(32 / 14);
   text-align: center;
+  margin-bottom: 1.25rem;
 }
 
+@media (min-width: 768px) {
+  .voice_name {
+    font-size: 0.9375rem;
+    line-height: calc(32 / 15);
+    margin-bottom: 1rem;
+  }
+
+}
 .voice_text {
   font-size: 0.875rem;
   font-weight: 400;
@@ -411,14 +455,26 @@ h1 {
 
 .prev-arrow {
   position: absolute;
-  left: -50px;
-  top: 193px;
+  left: -3.125rem;
+  top: 12.0625rem;
 }
 
 .next-arrow {
   position: absolute;
-  right: -50px;
-  top: 193px;
+  right: -3.125rem;
+  top: 12.0625rem;
+}
+
+@media (min-width: 768px) {
+  .prev-arrow {
+    left: 0.25rem;
+    top: 12.0625rem;
+  }
+
+  .next-arrow {
+    right: 0.25rem;
+    top: 12.0625rem;
+  }
 }
 
 /* Slickドット */
@@ -427,7 +483,7 @@ h1 {
 }
 
 .slick-dots {
-  top: 24.25rem;
+  top: 105%;
   display: flex;
   column-gap: 0.5rem;
   justify-content: center;
