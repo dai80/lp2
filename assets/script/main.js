@@ -26,7 +26,7 @@ $('.voice__slick').slick({
 });
 
 // アコーディオン
-$('.qa-box').on('click', function (e) {
+$('.qa__question').on('click', function (e) {
     $(this).toggleClass('open-active')
     var content = $(this).next();
 
@@ -34,7 +34,7 @@ $('.qa-box').on('click', function (e) {
 });
 
 // ページトップボタン
-var buttonToTop = $('#button-to-top');
+var buttonToTop = $('#back-to-top');
 var position = 0;
 var speed = 800;
 
