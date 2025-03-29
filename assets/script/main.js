@@ -1,28 +1,27 @@
-// カルーセル
-$('.voice__slick').slick({
-    infinite: true,
-    dots: true,
-    arrows: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    prevArrow: '<img src="/assets/image/voice_arrow-left01.png" class="slide-arrow prev-arrow">',
-    nextArrow: '<img src="/assets/image/voice_arrow-right01.png" class="slide-arrow next-arrow">',
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
+// swiper
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".voice__carousel", {
+        loop: false,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
         },
-        {
-            breakpoint: 769,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+            769: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
             }
         }
-    ]
+    });
 });
 
 // アコーディオン

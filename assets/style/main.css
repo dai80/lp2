@@ -65,7 +65,7 @@ main {
 
 @media (min-width: 768px) {
     .button--green {
-        width: 300px;
+        width: 18.75rem;
     }
 }
 
@@ -74,19 +74,20 @@ main {
     justify-content: center;
     align-items: flex-end;
     position: fixed;
-    bottom: 10.7rem;
+    bottom: 10.4rem;
     right: 1rem;
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.875rem;
     color: #fff;
     background-color: #0071CE;
+    z-index: 1;
 }
 
 @media (min-width: 768px) {
     .back-to-top {
         right: 11rem;
-        bottom: 6rem;
+        bottom: 6.5rem;
     }
 }
 
@@ -96,8 +97,8 @@ main {
     position: fixed;
     width: 100%;
     top: 0;
-    padding-top: 1.5rem;
-    z-index: 1;
+    padding-top: 1.1rem;
+    z-index: 2;
     text-align: center;
 }
 
@@ -131,7 +132,7 @@ h1 img {
 /* カバー
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 .cover {
-    padding-bottom: 9.9125rem;
+    padding-bottom: 6.7875rem;
 }
 
 @media (min-width: 768px) {
@@ -215,7 +216,7 @@ h1 img {
 /* 問い合わせ
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 .btn-container {
-    padding: 0 1rem 3.125rem;
+    padding: 3.125rem 1rem 3.125rem;
 }
 
 @media (min-width: 768px) {
@@ -282,11 +283,28 @@ h1 img {
     font-weight: 400;
     color: #111;
     line-height: calc(20 / 14);
-    letter-spacing: 0.125rem;
+    letter-spacing: -0.1rem;
+    margin-left: 0.3125rem;
 }
 
 @media (min-width: 768px) {
     .btn-container__price {
+        font-size: 1rem;
+        line-height: calc(23 / 16);
+    }
+}
+
+.price {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #111;
+    line-height: calc(20 / 14);
+    letter-spacing: 0.125rem;
+    margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .price {
         font-size: 1rem;
         line-height: calc(23 / 16);
     }
@@ -385,14 +403,14 @@ h1 img {
 /* voice
 ---------------------------------------------------*/
 .voice {
-    padding: 3.325rem 3.4375rem 4.6875rem;
+    padding: 3.325rem 1rem 2.3rem;
 }
 
 @media (min-width: 768px) {
     .voice {
         max-width: 75rem;
         margin: 0 auto;
-        padding: 5rem 1rem 7.0625rem;
+        padding: 5rem 1rem 4.5625rem;
     }
 }
 
@@ -440,29 +458,62 @@ h1 img {
     }
 }
 
+/* swiper */
+.voice__carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden
+}
+
 @media (min-width: 768px) {
-    .voice__slick {
+    .voice__carousel {
         max-width: 72.25rem;
         padding: 0 2.5rem 0;
     }
 }
 
-.voice__box {
-    background-color: #DBF7F9;
-    padding: 1.85rem 0.9375rem 1.75rem;
+.swiper-wrapper {
+    max-width: 980px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
-    .voice__box {
+    .swiper-slide {
+        max-width: 61.25rem;
+        margin: 0 auto;
+    }
+}
+
+.voice__container {
+    background-color: #fff;
+    padding: 0 2.5rem 2.3rem 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .voice__container {
+        padding: 0 2.5rem 2.5rem 2.5rem;
+    }
+}
+
+.voice__container-box {
+    background-color: #DBF7F9;
+    padding: 1.55rem 0.9375rem 1.55rem;
+}
+
+@media (min-width: 768px) {
+    .voice__container-box {
         padding: 2.5rem 1rem 2.5rem;
-        margin-right: 2.35rem;
-        margin-left: 2.45rem;
         max-width: 18.75rem;
     }
 }
 
 .voice__img {
-    width: 33.3%;
+    width: 34%;
     margin: 0 auto;
     border-radius: 50%;
 }
@@ -473,7 +524,7 @@ h1 img {
     color: #000;
     line-height: calc(32 / 14);
     text-align: center;
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.65rem;
 }
 
 @media (min-width: 768px) {
@@ -489,93 +540,82 @@ h1 img {
     font-weight: 400;
     color: #000;
     line-height: calc(28 / 14);
+    letter-spacing: -0.1px;
 }
 
-/* Slick矢印 */
-.slide-arrow {
+/* swiper（矢印） */
+.swiper-button-prev {
+    position: absolute;
     width: 2rem;
     height: 2rem;
-    cursor: pointer;
+    left: 0;
+    top: 11.1625rem;
+    border-radius: 50%;
 }
 
 @media (min-width: 768px) {
-    .slide-arrow {
+    .swiper-button-prev {
+        position: absolute;
         width: 3rem;
         height: 3rem;
-        cursor: pointer;
+        left: 0;
+        top: 10.7625rem;
     }
 }
 
-.prev-arrow {
+.swiper-button-next {
     position: absolute;
-    left: -2.5rem;
-    top: 12.0625rem;
-}
-
-.next-arrow {
-    position: absolute;
-    right: -2.5rem;
-    top: 12.0625rem;
+    width: 2rem;
+    height: 2rem;
+    right: 0;
+    top: 11.0625rem;
+    border-radius: 50%;
 }
 
 @media (min-width: 768px) {
-    .prev-arrow {
-        left: 0%;
-        top: 12.0625rem;
-    }
-
-    .next-arrow {
-        right: 0%;
-        top: 12.0625rem;
+    .swiper-button-next {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        right: 0;
+        top: 10.7625rem;
     }
 }
 
-/* Slickドット */
-.slick-dotted.slick-slider {
-    margin-bottom: 0;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: "";
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: none;
 }
 
-.slick-dots {
-    top: 105%;
-    right: 0%;
-    display: flex;
-    column-gap: 0.5rem;
-    justify-content: center;
+/* ページネーション（ドット）*/
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    z-index: 10;
 }
 
-.slick-dots li {
+.swiper-pagination-bullet {
+    background-color: #EEEEEE;
     width: 0.5625rem;
-    height: 0.525rem;
-    margin: 0;
+    height: 0.5625rem;
+    margin: 0.5rem;
+    opacity: 0.5;
 }
 
-.slick-dots li button {
-    width: 0.525rem;
-    height: 0.525rem;
-    padding: 0;
-    background-color: #EEE;
-    border-radius: 50%;
-}
-
-.slick-dots li button::before {
-    width: 0.525rem;
-    height: 0.525rem;
-    line-height: normal;
-    border-radius: 50%;
-    opacity: 0;
-}
-
-.slick-dots li button:hover::before,
-.slick-dots li.slick-active button::before {
-    color: #00AFBF;
+.swiper-pagination-bullet-active {
     background-color: #00AFBF;
     opacity: 1;
 }
 
+
 /* qa
 --------------------------------------------------*/
 .qa {
-    padding: 2rem 1rem 2rem;
+    padding: 2.2rem 1rem 2rem;
     background: linear-gradient(to right, rgba(244, 255, 232, 1), rgba(198, 240, 254, 1));
 }
 
@@ -597,7 +637,8 @@ h1 img {
     color: #000;
     line-height: calc(32 / 30);
     text-align: center;
-    letter-spacing: 0.125rem;
+    letter-spacing: 0.11rem;
+    margin-bottom: 0.25rem;
 }
 
 @media (min-width: 768px) {
@@ -615,8 +656,8 @@ h1 img {
     color: #000;
     line-height: calc(32 / 16);
     text-align: center;
-    padding-bottom: 2.25rem;
-    letter-spacing: 0.125rem;
+    padding-bottom: 2.05rem;
+    letter-spacing: 0.05rem;
 }
 
 @media (min-width: 768px) {
@@ -631,7 +672,7 @@ h1 img {
 .qa__accordion-container {
     display: flex;
     flex-direction: column;
-    row-gap: 1.25rem;
+    row-gap: 1.35rem;
 }
 
 @media (min-width: 768px) {
@@ -654,7 +695,7 @@ h1 img {
 
 .qa__question {
     display: flex;
-    padding: 1.25rem 1.025rem 1.25rem 1rem;
+    padding: 0.95rem 0.87rem 0.75rem 1rem;
 }
 
 @media (min-width: 768px) {
@@ -681,7 +722,6 @@ h1 img {
         line-height: calc(32 / 18);
         margin-right: 1rem;
     }
-
 }
 
 .qa_text {
@@ -689,7 +729,6 @@ h1 img {
     font-weight: 400;
     color: #444;
     line-height: calc(28 / 15);
-    margin-right: 0.25rem;
 }
 
 @media (min-width: 768px) {
@@ -699,8 +738,9 @@ h1 img {
     }
 }
 
-.qa__question .bi {
+.qa_icon {
     color: #000;
+    margin-top: 4.5px;
 }
 
 .open-active .qa_icon {
@@ -716,7 +756,7 @@ h1 img {
 
 .qa__answer-container {
     display: none;
-    padding: 0 1.0625rem 2.0625rem 1rem;
+    padding: 0 1.0625rem 1.8625rem 1rem;
 }
 
 @media (min-width: 768px) {
@@ -737,7 +777,7 @@ h1 img {
     font-weight: 400;
     color: #444;
     line-height: calc(28 / 16);
-    margin-right: 0.75rem;
+    margin-right: 0.77rem;
 }
 
 @media (min-width: 768px) {
@@ -781,7 +821,7 @@ h1 img {
 
 .footer__logo {
     max-width: 10.375rem;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1.3rem;
 }
 
 @media (min-width: 768px) {
@@ -792,7 +832,7 @@ h1 img {
 }
 
 .footer__nav {
-    margin-bottom: 1.5625rem;
+    margin-bottom: 1.4625rem;
 }
 
 @media (min-width: 768px) {

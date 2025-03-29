@@ -12,7 +12,6 @@
         <meta property="og:url" content="https://example.com">
         <meta property="og:site_name" content="Kira-meki">
 
-
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,17 +21,15 @@
         <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
         <!-- Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <!-- Slick -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        <!-- SwiperのCSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <link rel="stylesheet" href="/assets/style/main.css">
     </head>
 
     <body>
         <!-- ヘッダー -->
         <header class="header">
-            <h1><a href="#"><img src="/assets/image/header_logo.png" alt="Kira-meki"></a></h1>
-
+            <h1><a href="#"><img src="/assets/image/header_logo01.png" alt="Kira-meki"></a></h1>
         </header>
 
         <main>
@@ -54,7 +51,7 @@
                 <div class="btn-container__btn-box">
                     <div class="btn-container__text-box">
                         <p class="btn-container__text">キラメキクリーム</p>
-                        <p class="btn-container__price">税込4,000円</p>
+                        <p class="btn-container__price">税込<span class="price">4,000円</span></p>
                     </div>
                     <!-- ボタン -->
                     <div class="btn__box">
@@ -81,57 +78,91 @@
                     <span class="voice__title">Voices</span>
                     <span class="voice__title-sub">お客様の声</span>
                 </h3>
-
-                <!-- slick -->
-                <div class="voice__slick">
-                    <!-- 1枚目 -->
-                    <div class="voice__box">
-                        <div class="voice__img">
-                            <img src="/assets/image/voice01.jpg" alt="">
+                <!-- swiper(carousel) -->
+                <div class="voice__carousel swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 1枚目 -->
+                        <div class="swiper-slide">
+                            <div class="voice__container">
+                                <div class="voice__container-box">
+                                    <div class="voice__img">
+                                        <img src="/assets/image/voice01.jpg" alt="">
+                                    </div>
+                                    <p class="voice__name">Aさん</p>
+                                    <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="voice__name">Aさん</p>
-                        <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                    </div>
-                    <!-- 2枚目 -->
-                    <div class="voice__box">
-                        <div class="voice__img">
-                            <img src="/assets/image/voice02.jpg" alt="">
+                        <!-- 2枚目 -->
+                        <div class="swiper-slide">
+                            <div class="voice__container">
+                                <div class="voice__container-box">
+                                    <div class="voice__img">
+                                        <img src="/assets/image/voice02.jpg" alt="">
+                                    </div>
+                                    <p class="voice__name">Bさん</p>
+                                    <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="voice__name">Bさん</p>
-                        <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                    </div>
-                    <!-- 3枚目 -->
-                    <div class="voice__box">
-                        <div class="voice__img">
-                            <img src="/assets/image/voice03.jpg" alt="">
+                        <!-- 3枚目 -->
+                        <div class="swiper-slide">
+                            <div class="voice__container">
+                                <div class="voice__container-box">
+                                    <div class="voice__img">
+                                        <img src="/assets/image/voice03.jpg" alt="">
+                                    </div>
+                                    <p class="voice__name">Cさん</p>
+                                    <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="voice__name">Cさん</p>
-                        <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                    </div>
-                    <!-- 4枚目 -->
-                    <div class="voice__box">
-                        <div class="voice__img">
-                            <img src="/assets/image/voice01.jpg" alt="">
+                        <!-- 4枚目 -->
+                        <div class="swiper-slide">
+                            <div class="voice__container">
+                                <div class="voice__container-box">
+                                    <div class="voice__img">
+                                        <img src="/assets/image/voice01.jpg" alt="">
+                                    </div>
+                                    <p class="voice__name">Aさん</p>
+                                    <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="voice__name">Aさん</p>
-                        <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                    </div>
-                    <!-- 5枚目 -->
-                    <div class="voice__box">
-                        <div class="voice__img">
-                            <img src="/assets/image/voice02.jpg" alt="">
+                        <!-- 5枚目 -->
+                        <div class="swiper-slide">
+                            <div class="voice__container">
+                                <div class="voice__container-box">
+                                    <div class="voice__img">
+                                        <img src="/assets/image/voice02.jpg" alt="">
+                                    </div>
+                                    <p class="voice__name">Bさん</p>
+                                    <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="voice__name">Bさん</p>
-                        <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                    </div>
-                    <!-- 6枚目 -->
-                    <div class="voice__box">
-                        <div class="voice__img">
-                            <img src="/assets/image/voice03.jpg" alt="">
+                        <!-- 6枚目 -->
+                        <div class="swiper-slide">
+                            <div class="voice__container">
+                                <div class="voice__container-box">
+                                    <div class="voice__img">
+                                        <img src="/assets/image/voice03.jpg" alt="">
+                                    </div>
+                                    <p class="voice__name">Cさん</p>
+                                    <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="voice__name">Cさん</p>
-                        <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
                     </div>
+                    <!-- swiper（矢印） -->
+                    <div class="swiper-button-prev">
+                        <img src="/assets/image/voice_arrow-left01.png" alt="">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="/assets/image/voice_arrow-right01.png" alt="">
+                    </div>
+                    <!-- ページネーション（ドット） -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
@@ -221,7 +252,7 @@
                 <div class="btn-container__btn-box">
                     <div class="btn-container__text-box">
                         <p class="btn-container__text">キラメキクリーム</p>
-                        <p class="btn-container__price">税込4,000円</p>
+                        <p class="btn-container__price">税込<span class="price">4,000円</span></p>
                     </div>
                     <!-- ボタン -->
                     <div class="btn__box">
@@ -256,8 +287,8 @@
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- Slick -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <!-- SwiperのJS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="/assets/script/main.js"></script>
     </body>
 
