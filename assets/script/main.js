@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".voice__carousel", {
         loop: false,
-        spaceBetween: 0,
+        spaceBetween: 40,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"
