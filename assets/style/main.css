@@ -142,18 +142,18 @@ h1 img {
 }
 
 .cover__contents__width {
-    background-image: url(/assets/image/cover_sp01.png);
+    background-image: url(/assets/image/mv_sp_01.png);
     background-position: 56.5% 68%;
     height: 28.125rem;
+    width: 100vw;
 }
 
 @media (min-width: 768px) {
     .cover__contents__width {
-        background-image: url(/assets/image/cover_pc01.png);
+        background-image: url(/assets/image/mv_pc_01.png);
+        background-size: cover;
+        background-position: center;
         height: 45rem;
-        background-position: 61% 61%;
-        max-width: 93.75rem;
-        margin: 0 auto;
     }
 }
 
@@ -326,19 +326,18 @@ h1 img {
 /* PR
 ---------------------------------------------------*/
 .pr__contents-width {
-    background-image: url(/assets/image/pr_sp01.png);
+    background-image: url(/assets/image/index_pr_sp_01.png);
     background-position: 51% 0%;
     height: 42.5rem;
 }
 
 @media (min-width: 768px) {
     .pr__contents-width {
-        background-image: url(/assets/image/pr_pc01.png);
-        background-position: 100% 50%;
-        background-size: 135%;
+        background-image: url(/assets/image/index_pr_pc_01.png);
+        background-position: center;
+        background-size: cover;
         height: 34.375rem;
-        max-width: 93.75rem;
-        margin: 0 auto;
+        width: 100vw;
     }
 }
 
@@ -680,6 +679,7 @@ h1 img {
     .qa__question {
         padding: 1.5rem 1.525rem 1.5rem 1.5rem;
         align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -719,6 +719,7 @@ h1 img {
 .qa_icon {
     color: #000;
     margin-top: 4.5px;
+    margin-left: auto;
 }
 
 .open-active .qa_icon {
