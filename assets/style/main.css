@@ -326,14 +326,14 @@ h1 img {
 /* PR
 ---------------------------------------------------*/
 .pr__contents-width {
-    background-image: url(/assets/image/index_pr_sp_01.png);
+    background-image: url(/assets/image/pr_sp_01.png);
     background-position: 51% 0%;
     height: 42.5rem;
 }
 
 @media (min-width: 768px) {
     .pr__contents-width {
-        background-image: url(/assets/image/index_pr_pc_01.png);
+        background-image: url(/assets/image/pr_pc_01.png);
         background-position: center;
         background-size: cover;
         height: 34.375rem;
