@@ -489,6 +489,9 @@ h1 img {
 .voice__img {
     width: 34%;
     margin: 0 auto;
+}
+
+.voice__img img {
     border-radius: 50%;
 }
 
